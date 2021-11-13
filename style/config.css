@@ -1,0 +1,150 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins';
+}
+
+:root{
+  --ORANGE1: #E65D16;
+  --BLACK1: #1C2023;
+  --BLUE1:#3671B9;
+  --BLUE2:#5399C3;
+  --BLUE3:#3595A0;
+  --GREEN1:#BED64C;
+  --GRAY1:#C3C3B4;
+  --WHITE1:#EDF0F0;
+}
+
+body{
+  display:flex;
+  flex-direction: row;
+  padding: 2rem;
+}
+
+/*FIM RESET*/
+
+.left-aside{
+  width: 100px;
+}
+
+.logo{
+  padding: 0;
+  margin-bottom:20px;
+  position: relative;
+  left: -17px;
+  width: 10px;
+}
+
+.logo img{
+  width: 100px;
+  border-radius: 12px;
+}
+
+.menu{
+  display:flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 2rem;
+  justify-content:center;
+}
+
+.nav-link{
+  color: var(--BLACK1);
+  width: fit-content;
+  padding: .6rem;
+  border-radius: 12px;
+  font-size: x-large;
+}
+
+
+.nav-link:hover{
+  background-color: var(--ORANGE1);
+  color: var(--WHITE1);
+  box-shadow: 0 4px 15px -6px var(--ORANGE1) ;
+}
+
+.active-nav{
+  background-color: var(--ORANGE1);
+  color: var(--WHITE1);
+  box-shadow: 0 4px 15px -6px var(--ORANGE1);
+  transition:  .8s;
+}
+
+@media (max-width: 767px){
+
+  .left-aside{
+    width: 100%;
+  }
+  body{
+    padding: 10px;
+  }
+ nav{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+ }
+
+ .logo{
+   display: none;
+ }
+
+ .menu{
+   flex-direction: row;
+
+ }
+
+ .nav-link{
+  color: var(--BLACK1);
+  width: fit-content;
+  border-radius: 12px;
+  font-size: large;
+}
+}
