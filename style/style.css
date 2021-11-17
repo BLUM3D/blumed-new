@@ -1,7 +1,15 @@
 @import url(./config.css);
+.img-mobile{
+  display: none;
+}
 @media (max-width: 767px){
+  .img-mobile{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 2rem;
+  }
   .quem-somos h2{
-    font-size:large;
+    font-size:x-large;
     font-weight:bold;
   }
 
@@ -20,5 +28,24 @@
   }
   .descricao{
     margin-bottom:2rem;
+  }
+
+  .titles{
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    justify-content:center;
+    font-size: large;
+    align-items: center;
+    font-weight:bold;
+    margin-bottom: 2rem;
+  }
+
+  .titles h2{
+    font-size: xxx-large;
+    background-color: var(--ORANGE1);
+    color: var(--WHITE1);
+    padding: .3rem;
+    border-radius: 12px;
   }
 }

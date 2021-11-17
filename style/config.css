@@ -65,7 +65,7 @@ table {
 body{
   display:flex;
   flex-direction: row;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 /*FIM RESET*/
@@ -117,6 +117,15 @@ body{
   transition:  .8s;
 }
 
+.btn-feito{
+  padding: .5rem 1rem;
+  border: 1px solid var(--ORANGE1);
+  border-radius:12px;
+  background-color: var(--ORANGE1);
+  text-decoration: none;
+  color: var(--WHITE1);
+}
+
 @media (max-width: 767px){
 
     .left-aside{
@@ -125,7 +134,7 @@ body{
       margin-bottom: 2rem;
     }
     body{
-      padding: 10px;
+      padding: .5rem;
       flex-direction: column;
     }
     nav{
@@ -141,16 +150,12 @@ body{
       bottom: 0;
       left: 0;
       background-color: rgba(0, 0, 0, 0.7);
-      border-radius:  0px  0px 50px 50px ;
+      border-radius:  30px 30px  0px  0px;
     }
 
     nav.ativo{
      background-color: rgba(0, 0, 0, 0.7);
-     border-radius:  0px  0px 50px 50px ;
-    }
-
-    .content{
-      margin-top:  40px;
+     border-radius:  30px 30px  0px  0px;
     }
 
     .logo{
@@ -168,23 +173,8 @@ body{
       border-radius: 12px;
       font-size: large;
     }
-
-    .titles{
-      display: flex;
-      flex-direction: row;
-      gap: .2rem;
+    .call-action{
+      display:flex;flex-direction: row;
       justify-content:center;
-      font-size:large;
-      align-items: center;
-      font-weight: bold;
-      margin-bottom: 2rem;
     }
-
-    .titles h2{
-      background-color: var(--ORANGE1);
-      color: var(--WHITE1);
-      padding: .3rem;
-      border-radius: 12px;
-    }
-
 }
