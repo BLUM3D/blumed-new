@@ -28,7 +28,10 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+body,html  {
+	overflow-x: hidden;
+}
+body{
 	line-height: 1;
 }
 /* ol, ul {
@@ -50,10 +53,13 @@ table {
   box-sizing: border-box;
   font-family: 'Poppins';
 }
+p,h1,h2,h3,h4,img{
+  padding: 0.5em;
+}
 
 :root{
   --ORANGE1: #E65D16;
-  --BLACK1: #1C2023;
+  --BLACK1: #19181c;
   --BLUE1:#3671B9;
   --BLUE2:#5399C3;
   --BLUE3:#3595A0;
@@ -63,9 +69,10 @@ table {
 }
 
 body{
+  z-index: 1000;
   display:flex;
   flex-direction: row;
-  padding: 1rem;
+  /* padding: 1rem; */
   text-align: justify;
 }
 
@@ -127,16 +134,36 @@ body{
   color: var(--WHITE1);
   box-shadow: 0 4px 15px -6px var(--ORANGE1) ;
 }
-
+.overlay{
+  display: none;
+}
 @media (max-width: 767px){
+  .overlay{
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+    position: absolute;
+    z-index: 10001;
+    background-color: var(--BLACK1);
+
+  }
+
+  .overlay img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
 
     .left-aside{
       width: 100%;
       clear: both;
       margin-bottom: 2rem;
     }
+  
     body{
-      padding: .5rem;
       flex-direction: column;
     }
     nav{
@@ -153,6 +180,7 @@ body{
       left: 0;
       background-color: rgba(0, 0, 0, 0.7);
       border-radius:  30px 30px  0px  0px;
+      z-index: 1000;
     }
 
     nav.ativo{
@@ -178,5 +206,8 @@ body{
     .call-action{
       display:flex;flex-direction: row;
       justify-content:center;
+    }
+    .sumiu{
+      display: none;
     }
 }
