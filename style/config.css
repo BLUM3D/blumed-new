@@ -137,7 +137,7 @@ body{
 .overlay{
   display: none;
 }
-@media (max-width: 767px){
+@media (max-width: 769px){
   .overlay{
     display: block;
     width: 100vw;
@@ -209,5 +209,17 @@ body{
     }
     .sumiu{
       display: none;
+    }
+    footer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+      gap:2px;
+    }
+
+    footer .titles{
+      margin-bottom:0;
     }
 }
