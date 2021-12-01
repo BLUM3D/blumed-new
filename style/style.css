@@ -12,17 +12,6 @@ body {
   flex-direction: row;
 }
 
-aside {
-  position: fixed;
-  z-index: 1000;
-  left: 1;
-  top: 0;
-}
-
-.teste {
-  margin-left: 50%;
-}
-
 .content {
   margin-left: 6%;
 }
