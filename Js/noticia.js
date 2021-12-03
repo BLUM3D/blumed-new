@@ -12,16 +12,19 @@ async function exibeNoticia(){
     let noticia  =  f.articles[i];
     if(noticia.urlToImage){
       txt += `
-    <article class="noticia">
-    <div class="img-noticia">
-      <img src="${noticia.urlToImage}">
-    </div>
-    <div class="txt-noticia">
-      <h3 class="titulo">${noticia.title}</h3>
-      <p class="texto">${noticia.content} </p>
-      <a href="${noticia.url}" class="leia-mais">leia mais...</a>
-    </div>
-  </article>
+      <div class="conjunto">
+      <article class="noticia">
+        <div class="img-noticia">
+          <img src="${noticia.urlToImage}">
+        </div>
+        <div class="txt-noticia">
+          <h3 class="titulo">${noticia.title}</h3>
+          <p class="texto">${noticia.description} </p>
+          <a href="${noticia.url}" class="btn-feito">leia mais</a>
+        </div>
+      </article>
+      <div class="divisor" class="divisor${i}"></div>
+      </div>
     `;
     }
   }
