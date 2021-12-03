@@ -1,3 +1,5 @@
+
+
 var API_KEY = '37dd07f463004ae39bb7f05d28a400f4';
 
 async function exibeNoticia(){
@@ -28,10 +30,10 @@ async function exibeNoticia(){
     `;
     }
   }
-
   display.innerHTML = txt;
-
-
 }
 
 exibeNoticia();
+
+
+

@@ -11,9 +11,3 @@ window.addEventListener("scroll" , () => {
   }
   lastScrollTop = scrollTop;
 })
-
-const teste = document.getElementById('teste');
-teste.classList.toggle("sumiu");
-window.setTimeout(() => {
-  teste.classList.toggle("sumiu");
-},1500);
