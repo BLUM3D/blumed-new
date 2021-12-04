@@ -48,3 +48,24 @@ button {
   color: var(--WHITE1);
   box-shadow: 0 4px 15px -6px var(--ORANGE1);
 }
+
+@media (max-width: 769px) {
+  .teste2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0%;
+  }
+
+  .formDoContato input,
+  textarea {
+    width: 75%;
+    margin-bottom: 1rem;
+    outline: none;
+  }
+
+  .teste {
+    justify-content: center;
+  }
+}
