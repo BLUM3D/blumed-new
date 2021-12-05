@@ -1,0 +1,19 @@
+@import url(./config.css);
+
+#teste {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  margin-left: 50%;
+  width: 100%;
+}
+
+body {
+  width: 100%;
+}
+
+.invisivel {
+  background-color: #000;
+}
